@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/grayBackground">
+
+    <TextView
+        android:id="@+id/article_heading"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="IET DAVV"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textColor="@android:color/holo_orange_light"
+        android:textColorHighlight="@color/colorAccent"
+        android:textSize="46sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/article_subheading"
+        android:layout_width="388dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/article_heading"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="19dp"
+        android:background="#572ED400"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Mobile technology"
+        android:textAppearance="@android:style/TextAppearance"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/article_heading"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:singleLine="false"
+        android:text="mobile technology short notes"
+        android:textAppearance="@android:style/TextAppearance"
+        android:textColor="#F9FDFD"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/article_subheading"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="36dp">
+
+        <TextView
+            android:id="@+id/article"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:text="Mobile technology is technology that goes where the user goes. It consists of portable two-way communications devices, computing devices and the networking technology that connects them.
+            Currently, mobile technology is typified by internet-enabled devices like smartphones, tablets and watches. These are the latest in a progression that includes two-way pagers, notebook computers, mobile telephones (flip phones), GPS-navigation devices and more.
+            The communications networks that connect these devices are loosely termed wireless technologies. They enable mobile devices to share voice, data and applications (mobile apps).
+            Mobile technology is pervasive and growing. The number of smartphone users has climbed beyond 3 billion¹ and the global mobile workforce is expected to reach 1.87 billion by 2022.²"
+            android:textColor="#FDFBFB"
+            android:textSize="30dp" />
+    </ScrollView>
+
+</RelativeLayout>
